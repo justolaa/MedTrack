@@ -2,7 +2,9 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from '../src/components/Navbar'
 import Home from '../src/pages/Home'
-// import AboutUs from './pages/AboutUs'
+import About from './pages/About'
+import Insights from './pages/Insights'
+import Reminder from './pages/Reminder'
 // import Sidebar from './components/Sidebar'
 // import Error from './pages/ErrorPage'
 // import Login from '../src/pages/Login'
@@ -24,8 +26,10 @@ function App() {
       {/* <Sidebar/> */}
       <Routes>
         <Route path='/' element={<Home/> }></Route>
-        {/* <Route path='/about' element={<AboutUs/>}></Route>
-        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/about' element={<About/>}></Route>
+        <Route path='/insights' element={<Insights/>}></Route>
+        <Route path='/reminders' element={<Reminder/>}></Route>
+        {/* <Route path='/login' element={<Login/>}></Route>
         <Route path='/signup' element={<Signup/>}></Route>
         <Route path='/account' element={<ProtectedRoute><Account/></ProtectedRoute>}></Route>
         <Route path='/admin' element={<ProtectedRoute><Admin/></ProtectedRoute>}></Route>
